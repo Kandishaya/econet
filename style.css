@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1, h2 {
+  background: #333;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+.tab {
+  background: #008CBA;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.tab:hover {
+  background: #005f73;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: #ccc;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.header {
+  background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('assets/econet.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  color: white;
+  padding: 24px;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  margin: 0;
+}
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1000;
+  color: rgba(255, 255, 255, 1);
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 160px;
+  height: 100%;
+  background: transparent;
+  color: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.drawer a {
+  display: block;
+  color: white;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-box {
+  display: none;
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 1);
+}
+.bottom-message {
+  bottom: 6;                /* at the bottom */
+  left: 0;
+  width: 100%;              /* full width */
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent background */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  z-index: 1000;            /* stays above other elements */
+}
+
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* fallback background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* stays on top */
+}
+
+#splash img {
+  max-width: 80%;
+  max-height: 80%;
+}
